@@ -4,7 +4,7 @@ public class IsPositive {
 	static Scanner input =  new Scanner(System.in);
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		int num2;
 	
 		System.out.println("Enter a number");

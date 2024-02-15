@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class GreatestNumber {
-	static Scanner input = new Scanner(System.in);
+	static Scanner input = new Scanner(System.in)
 	public static void main(String[] args) {
 		
 		//Take three numbers from the user and print the greatest number. 
@@ -29,9 +29,11 @@ public class GreatestNumber {
 				greatest = num3;
 			}
 			return greatest;{
-
 			}
 			
+			
+			
+		
 	
 					
 	
