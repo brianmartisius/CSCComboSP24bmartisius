@@ -52,7 +52,11 @@ public class Scrabble {
 		
 	
 		if(works) {
+<<<<<<< HEAD
 			System.out.println("This works");
+=======
+			System.out.println("this works");
+>>>>>>> a84a3cdb5c0857d6e2919068fe77a334ed31f99c
 		} else {
 			System.out.println("This does NOT work!");
 		}
@@ -90,4 +94,8 @@ public class Scrabble {
 	
 	
 	
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a84a3cdb5c0857d6e2919068fe77a334ed31f99c
