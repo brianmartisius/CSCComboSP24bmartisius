@@ -2,14 +2,15 @@
 public class ArrayKnowledge {
 
 	public static void main(String[] args) {
-		hasxx();
-		fromToArray();
+		char[] chrs = {'a', 'b', 'x'};		
+		System.out.println(hasxx(chrs));
+	//	fromToArray();
 
 	}
 
-	public boolean hasxx(char[] characters) {
-		for (int i = 0; i < char.length; i++)
-			if (char[i] == x && char[i + 1] == x ) {
+	public static boolean hasxx(char[] characters) {
+		for (int i = 0; i < characters.length - 1; i++)
+			if (characters[i] == 'x' && characters[i + 1] == 'x' ) {
 					return true;
 		}
 		return false;
