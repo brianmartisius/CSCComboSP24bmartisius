@@ -17,8 +17,7 @@ public class Car {
 		this.odometer += miles;
 	}
 	public void paint(String color) {
-		this.color = color;
-		
+		this.color = color;		
 	}
 	public int getOdometer() {
 		return odometer;
@@ -35,7 +34,6 @@ public class Car {
 	public String getMake() {
 		return make;
 	}
-
 	public void setMake(String make) {
 		this.make = make;
 	}
@@ -50,9 +48,7 @@ public class Car {
 	}
 	public void setHeight(int height) {
 		this.height = height;
-	}
-	
-	
+	}	
 	public Car(int odometer, String color, String make, String model, int height) {
 		super();
 		this.odometer = odometer;
@@ -61,7 +57,6 @@ public class Car {
 		this.model = model;
 		this.height = height;
 	}
-
 	@Override
 	public String toString() {
 		return "Car: " + color + " " + make + " " + model + " with " + odometer + " " + "miles. " + "Height: " + height;
