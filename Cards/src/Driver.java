@@ -3,20 +3,21 @@ public class Driver {
 
 	public static void main(String[] args) {
 		Card[] cards = new Card[52];
-		int index = 0;
 		
-		for(int suit = 0; suit <= 3; suit++) {
-			for(int rank = 1; rank <= 13; rank++) {
-				cards[index] = new Card(rank, suit);
-				index++;
-			}
-		}
+		Deck deck = new Deck();
+		deck.print();
+		
+		deck.shuffle();
+	//	deck.print();
+		//deck.selectionSort();
+		Deck.bubbleSort(deck);
+		deck.print();
+		
 		Card target = new Card(9, 2);
 		System.out.println(target);
 		System.out.println(binarySearch(cards, target));
 		System.out.println(cards[binarySearch(cards, target)]);
-		//System.out.println(cards[33]);
-				
+		//System.out.println(cards[33]);			
 
 	}
 	public static int binarySearch(Card[] cards, Card target) {
