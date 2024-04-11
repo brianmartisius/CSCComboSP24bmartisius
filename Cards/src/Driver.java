@@ -8,9 +8,19 @@ public class Driver {
 		deck.print();
 		
 		deck.shuffle();
+		deck.print();
+		System.out.println("*******************************");
+		
+		
+		Deck p1SubDeck = deck.subDeck(0,  25);
+		Deck p2SubDeck = deck.subDeck(26, 51);
+		p1SubDeck.print();
+		p2SubDeck.print();
+		
+
 	//	deck.print();
 		//deck.selectionSort();
-		Deck.bubbleSort(deck);
+	//	Deck.bubbleSort(deck);
 		deck.print();
 		
 		Card target = new Card(9, 2);
