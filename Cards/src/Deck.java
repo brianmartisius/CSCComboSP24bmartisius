@@ -19,36 +19,38 @@ public class Deck {
 			}
 		}
 	}
+	public Card[] getCards() {
+		return this.cards;
+	}
 	
 	public Deck subDeck(int low, int high) {
 		Deck sub = new Deck(high - low +1);
-		for (int i = 0; i < sub.cards.length; i++);{
-			sub.cards[i] = this.cards[low + i];
+		for (int i = 0; i < sub.cards.length; i++){
+			sub.cards[i] = this.cards[low + 1];
 		}
 		return sub;
 	}
 	
-	private static Deck merge(Deck p1SubDeck, Deck p2SubDeck) {
-		// create a new deck, d3, big enough for all the cards
-		// use the index i to keep track of where we are at in
-		// the first deck, and the index j for the second deck
-		int i = 0;
-		int j = 0;
-		// the index k traverses the result deck
-		for (int k = 0; k < p3SubDeck.length; k++) {
-		// if d1 is empty, use top card from d2
-		// if d2 is empty, use top card from d1
-		// otherwise, compare the top two cards
-		// add lowest card to the new deck at k
-		// increment i or j (depending on card)
-		}
-		// return the new deck
-		}
+//	private static Deck merge(Deck p1SubDeck, Deck p2SubDeck) {
+//		// create a new deck, d3, big enough for all the cards
+//		// use the index i to keep track of where we are at in
+//		// the first deck, and the index j for the second deck
+//		int i = 0;
+//		int j = 0;
+//		// the index k traverses the result deck
+//		for (int k = 0; k < p3SubDeck.length; k++) {
+//		// if d1 is empty, use top card from d2
+//		// if d2 is empty, use top card from d1
+//		// otherwise, compare the top two cards
+//		// add lowest card to the new deck at k
+//		// increment i or j (depending on card)
+//		}
+//		// return the new deck
+//		}
 
-
-	public Card[] getCards() {
-		return cards;
-	}
+//	public Card[] getCards() {
+//		return cards;
+//	}
 
 	public void shuffle() {
 		for (int i = 0; i < cards.length - 1; i++) {

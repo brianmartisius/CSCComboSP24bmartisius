@@ -8,9 +8,7 @@ public class Animal {
 		this.name = "animal";
 		this.height = 1.0;
 		this.weight = 1.0;
-	}
-	
-	
+	}	
 //	public Animal(String name, double height, double weight) {
 //		super();
 //		this.name = name;
