@@ -1,9 +1,9 @@
 
 public class Cat extends Animal {
-	
+
 	private String color;
-	
-	public Cat () {
+
+	public Cat() {
 		super();
 		this.color = "cat";
 
@@ -13,13 +13,18 @@ public class Cat extends Animal {
 		super();
 		this.color = color;
 	}
-	
+
 	public Cat(String name, double height, double weight, String color) {
-		super(name, height, weight);
+		// super(name, height, weight);
+		super.setName(name);
+		super.setHeight(height);
+		super.setWeight(weight);
+
 		this.color = color;
-		
+
 	}
-	@Override	
+
+	@Override
 	public String makeSound() {
 		return "purr";
 	}
@@ -29,6 +34,4 @@ public class Cat extends Animal {
 		String str = super.toString() + "Cat's color is " + color;
 		return str;
 	}
-	
-	
 }

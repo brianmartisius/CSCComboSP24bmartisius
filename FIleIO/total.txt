@@ -1,0 +1,3 @@
+Your subtotal is: 72.04
+Your taxes are: 3.82
+Your totall is: 75.86
